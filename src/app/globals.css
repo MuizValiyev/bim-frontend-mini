@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #F8F8F8;
+  --foreground: #F8F8F8;
+  /* font-family: Rothek, sans-serif; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F8F8F8;
+    --foreground: #F8F8F8;
+    /* font-family: Rothek, sans-serif; */
+    ;
   }
+}
+
+@font-face {
+  font-family: 'Rothek';
+  src: url('/fonts/RothekRegular.otf') format('opentype');
+  /* ✅ Убрал пробел в имени файла */
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rothek';
+  src: url('/fonts/RothekBold.otf') format('opentype');
+  /* ✅ Исправил 'bold' на normal */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Rothek';
+  src: url('/fonts/RothekLight.otf') format('opentype');
+  /* ✅ Обновил 'Normal' на 'Light' */
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Rothek';
+  src: url('/fonts/RothekSemiBold.otf') format('opentype');
+  font-weight: 600;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rothek, sans-serif;
 }
