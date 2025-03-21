@@ -17,28 +17,25 @@
 
 @font-face {
   font-family: 'Rothek';
-  src: url('/fonts/RothekRegular.otf') format('opentype');
-  /* ✅ Убрал пробел в имени файла */
+  src: url('/fonts/Rothek Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Rothek';
-  src: url('/fonts/RothekBold.otf') format('opentype');
-  /* ✅ Исправил 'bold' на normal */
+  src: url('/fonts/Rothek Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Rothek';
-  src: url('/fonts/RothekLight.otf') format('opentype');
-  /* ✅ Обновил 'Normal' на 'Light' */
+  src: url('/fonts/Rothek Light.otf') format('opentype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Rothek';
-  src: url('/fonts/RothekSemiBold.otf') format('opentype');
+  src: url('/fonts/Rothek SemiBold.otf') format('opentype');
   font-weight: 600;
 }
 
