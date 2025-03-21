@@ -183,13 +183,9 @@ export default function Home() {
               />
               <h3>О партнере</h3>
               <p>
-                Под брендом Starsdog BIM в январе открыл STARSDOGS в Москве
-                (работает в Лубянском проезде). Компания также планирует
-                развивать новый формат на фуд-кортах торговых центров и в
-                стрит-ритейле. По словам Дяди, большинство точек позиционируются
-                как островная концепция. Он привык работать с площадью около 20
-                кв. м, а в идеале — вообще с 2–3 кв. м, как это делается на
-                международных рынках.
+                При открытии филиала BIM в вашем городе, STARDOGS станет неотъемлемой частью вашей локации.  
+                Дополнительный поток клиентов: STARDOGS - известный бренд, любимый миллионами. 
+                Это привлечёт ещё больше гостей в ваш магазин.
               </p>
             </div>
             <Image
@@ -265,15 +261,6 @@ export default function Home() {
                 <p>1-2 месяцев</p>
               </div>
             </div>
-            <div className={styles.secondaryItem}>
-              <div className={styles.iconContainer}>
-                <img src="/flower.svg" alt="" />
-              </div>
-              <div className={styles.secondaryContent}>
-                <h3>Оборот</h3>
-                <p>5 млн с первого месяца</p>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -283,7 +270,7 @@ export default function Home() {
         >
           <div className={styles.container}>
             <div className={styles.boxcontactscontainerrow}>
-              <a href="mailto:support@bimproject.com"className={styles.boxemail}>
+              <a href="mailto:support@bimproject.com" className={styles.boxemail}>
                 <h6>Наша почта</h6>
                 <h2>Support@bimproject.com</h2>
               </a>
