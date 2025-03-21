@@ -383,7 +383,7 @@ export default function Home() {
               <p>Контакты</p>
               <p>+998 99-446-44-00</p>
               <div className={styles.boxsocialnetworks}>
-                <a href="">
+                <a href="https://www.tiktok.com/@bim.tashkent?_t=ZS-8usC2eeS9Vx&_r=1">
                   <Image
                     src="/tik-tok.svg"
                     alt="тикток"
