@@ -59,6 +59,7 @@ export default function nav() {
           name: '',
           phone: '',
           email: '',
+          country: '',
           city: '',
           comment: ''
         });
@@ -151,6 +152,14 @@ export default function nav() {
                   name="email" 
                   placeholder="Почта" 
                   value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <input 
+                  type="text" 
+                  name="country" 
+                  placeholder="Страна" 
+                  value={formData.country}
                   onChange={handleChange}
                   required
                 />
