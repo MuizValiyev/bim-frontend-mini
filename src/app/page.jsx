@@ -248,7 +248,7 @@ export default function Home() {
                 <img src="/flower.svg" alt="" />
               </div>
               <div className={styles.secondaryContent}>
-                <h3>Инвистиции от</h3>
+                <h3>Инвестиции от</h3>
                 <p>5.000$</p>
               </div>
             </div>
@@ -270,13 +270,13 @@ export default function Home() {
         >
           <div className={styles.container}>
             <div className={styles.boxcontactscontainerrow}>
-              <a href="mailto:support@bimproject.com" className={styles.boxemail}>
+              <a href="mailto:tmalikov1@icloud.com" className={styles.boxemail}>
                 <h6>Наша почта</h6>
-                <h2>Support@bimproject.com</h2>
+                <h2>tmalikov1@icloud.com</h2>
               </a>
               <a href="tel:+998996788878" className={styles.boxemail}>
                 <h6>Мы по номеру..</h6>
-                <h2>+998 99 678 88 78</h2>
+                <h2>+998 99-446-44-00</h2>
               </a>
             </div>
           </div>
@@ -300,17 +300,17 @@ export default function Home() {
             </div>
             <div className={styles.boxfooterinfocolumns}>
               <p>Контакты</p>
-              <p>+998 99 678 88 78</p>
+              <p>+998 99-446-44-00</p>
               <div className={styles.boxsocialnetworks}>
                 <a href="">
                   <Image
-                    src="/telegram.svg"
-                    alt="Телеграм"
+                    src="/tik-tok.svg"
+                    alt="тикток"
                     width={33}
                     height={33}
                   />
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/bim.tashkent?igsh=azZtNjB1ajBsdnh3">
                   <Image
                     src="/insta.svg"
                     alt="Инстаграм"
