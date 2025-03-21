@@ -86,6 +86,11 @@
   padding: 0px 16px;
 }
 
+.boxrowbtns .button{
+  display: none;
+  width: 100%;
+}
+
 .onebtn {
   display: flex;
   padding: 19px 25px;
@@ -103,8 +108,84 @@
   line-height: 120%;
 }
 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  pointer-events: auto;
+}
+
+.modal {
+  max-width: 500px;
+  display: inline-flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  border-radius: 30px;
+  border: 1px solid var(--Primary-Primary100, #E2F5FF);
+  background: #FFF;
+}
+
+.modal h2 {
+  color: #000;
+  font-family: Rothek;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.boxinputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.boxinputs input,
+.boxinputs textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--Colors-Neutral-200, #E3E3E3);
+  background: var(--Colors-Neutral-100, #FFF);
+  padding: 20px;
+  font-family: 'Rothek';
+  scrollbar-width: none;
+  resize: none;
+  color: var(--Colors-Neutral-600, #717171);
+  font-family: Rothek;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.boxinputs textarea {
+  height: 150px;
+}
+
+.boxinputs button {
+  width: 100%;
+  padding: 19px 66px;
+}
+
+
 
 @media screen and (max-width:1110px) {
+
   .header,
   .headerModalOpen {
     padding: 20px 0px;
@@ -139,7 +220,8 @@
     height: 68px;
   }
 
-  .header .logo img, .headerModalOpen .logo img {
+  .header .logo img,
+  .headerModalOpen .logo img {
     width: 101px;
     height: 42px;
   }
@@ -149,13 +231,16 @@
     background-color: unset;
     box-shadow: unset;
   }
+
   .mainNav {
     display: none;
   }
+
   .burgerandbutton img {
     display: flex;
     cursor: pointer;
   }
+
   .headerModalOpen .container {
     background-color: white;
     padding: 0px 9px 0px 24px;
@@ -164,8 +249,20 @@
   }
 }
 
+@media screen and (max-width:550px) {
+  .modal{
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width:450px) {
   .burgerandbutton .button {
     display: none;
+  }
+  .boxrowbtns .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -9,54 +9,44 @@ export default function Home() {
     <>
       <NavBar />
       <div className={styles.mainContainer}>
-        <section className={styles.header} style={{ backgroundImage: `url(/uzor.svg)` }}>
+        <section
+          className={styles.header}
+          style={{ backgroundImage: `url(/uzor.svg)` }}
+        >
           <div className={styles.boxHeaderText}>
             <div className={styles.boxTextPart1}>
               <div className={styles.boxText}>
                 <h2>
-                  BIM — место, где встречаются вкусы мира, развлечения и незабываемая атмосфера!
+                  BIM — место, где встречаются вкусы мира, развлечения и
+                  незабываемая атмосфера!
                 </h2>
-                <p>BIM — это не просто кафе или магазин, а пространство для отдыха, общения и ярких впечатлений.</p>
+                <p>
+                  BIM — это не просто кафе или магазин, а пространство для
+                  отдыха, общения и ярких впечатлений.
+                </p>
               </div>
-              <a href="#">
-                Стать ПАРТНЕРОМ
-              </a>
+              <a href="#">Стать ПАРТНЕРОМ</a>
             </div>
             <div className={styles.boxTextPart2}>
               <div className={styles.iconAndText}>
-                <Image
-                  src="/flowericon.svg"
-                  alt="."
-                  width={26}
-                  height={26}
-                />
+                <Image src="/flowerIcon.svg" alt="." width={26} height={26} />
                 <h3>Окупаемость</h3>
                 <p>8-18 месяцев</p>
               </div>
               <div className={styles.iconAndText}>
-                <Image
-                  src="/flowericon.svg"
-                  alt="."
-                  width={26}
-                  height={26}
-                />
+                <Image src="/flowerIcon.svg" alt="." width={26} height={26} />
                 <h3>Сроки открытия</h3>
                 <p>1-2 месяца</p>
               </div>
               <div className={styles.iconAndText}>
-                <Image
-                  src="/flowericon.svg"
-                  alt="."
-                  width={26}
-                  height={26}
-                />
+                <Image src="/flowerIcon.svg" alt="." width={26} height={26} />
                 <h3>Рентабельность</h3>
                 <p>30%</p>
               </div>
             </div>
           </div>
           <Image
-          className={styles.boxHeaderImage}
+            className={styles.boxHeaderImage}
             src="/headerImage.png"
             alt="."
             width={705}
@@ -66,67 +56,90 @@ export default function Home() {
         <div className={styles.boxWrapper}>
           <h1>Почему это выгодно?</h1>
           <div className={styles.boxTwoCards}>
-            <div className={styles.cardOne} style={{ backgroundImage: `url(/uzor.svg)` }}>
+            <div
+              className={styles.cardOne}
+              style={{ backgroundImage: `url(/uzor.svg)` }}
+            >
               <div className={styles.cardContent}>
                 <div className={styles.boxCardTexts}>
-                  <Image src="/iconTick.svg"alt="."width={60}height={73}/>
+                  <Image src="/iconTick.svg" alt="." width={60} height={73} />
                   <div className={styles.boxText}>
                     <h3>Больше посетителей</h3>
                     <p>еда + напитки = идеальное сочетание.</p>
                   </div>
                 </div>
                 <div className={styles.boxCardTexts}>
-                  <Image
-                    src="/iconTick.svg"
-                    alt="."
-                    width={60}
-                    height={73}
-                  />
+                  <Image src="/iconTick.svg" alt="." width={60} height={73} />
                   <div className={styles.boxText}>
                     <h3>Больше прибыли</h3>
-                    <p>Средний чек увеличивается за счёт разнообразного ассортимента.</p>
+                    <p>
+                      Средний чек увеличивается за счёт разнообразного
+                      ассортимента.
+                    </p>
                   </div>
                 </div>
                 <div className={styles.boxCardTexts}>
-                  <Image
-                    src="/iconTick.svg"
-                    alt="."
-                    width={60}
-                    height={73}
-                  />
+                  <Image src="/iconTick.svg" alt="." width={60} height={73} />
                   <div className={styles.boxText}>
                     <h3>Готовое решение</h3>
-                    <p>Никаких сложностей, мы уже настроили процесс интеграции.</p>
+                    <p>
+                      Никаких сложностей, мы уже настроили процесс интеграции.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <Image className={styles.boxCardImage} src="/Image2.png"alt="."width={684}height={696}/>
+            <Image
+              className={styles.boxCardImage}
+              src="/Image2.png"
+              alt="."
+              width={684}
+              height={696}
+            />
           </div>
         </div>
 
         <section className={styles.conceptSection}>
-          <h2>BIM — это не просто магазин,<br />а <span className={styles.highlight}>lifestyle</span></h2>
+          <h2>
+            BIM — это не просто магазин,
+            <br />а <span className={styles.highlight}>lifestyle</span>
+          </h2>
 
           <div className={styles.featuresContainer}>
             <div className={styles.featureBox}>
               <h3>Атмосфера и вайб</h3>
-              <p>Каждая точка BIM – это стильное пространство, куда молодежь приходит не только за покупками, но и за эмоциями.</p>
+              <p>
+                Каждая точка BIM – это стильное пространство, куда молодежь
+                приходит не только за покупками, но и за эмоциями.
+              </p>
             </div>
 
             <div className={styles.featureBox}>
               <h3>Социальный феномен</h3>
-              <p>BIM стал культовым местом среди <strong>поколения Z и миллениалов,</strong> где рождаются тренды и создаётся контент.</p>
+              <p>
+                BIM стал культовым местом среди{" "}
+                <strong>поколения Z и миллениалов,</strong> где рождаются тренды
+                и создаётся контент.
+              </p>
             </div>
 
             <div className={styles.featureBox}>
               <h3>Взрывной рост</h3>
-              <p>За короткий срок открыто 8 филиалов, но это только начало. До конца года сеть BIM вырастет <strong>до 50 точек по всему Узбекистану.</strong></p>
+              <p>
+                За короткий срок открыто 8 филиалов, но это только начало. До
+                конца года сеть BIM вырастет{" "}
+                <strong>до 50 точек по всему Узбекистану.</strong>
+              </p>
             </div>
 
             <div className={styles.featureBox}>
               <h3>Культовые продукты</h3>
-              <p>Эксклюзивные напитки <strong>Bubble BIM</strong>, <strong>Shake BIM</strong>, <strong>Mojito BIM</strong>, топовые корейские снеки и возможность готовить рамен на месте сделали BIM <strong>must-visit</strong> местом.</p>
+              <p>
+                Эксклюзивные напитки <strong>Bubble BIM</strong>,{" "}
+                <strong>Shake BIM</strong>, <strong>Mojito BIM</strong>, топовые
+                корейские снеки и возможность готовить рамен на месте сделали
+                BIM <strong>must-visit</strong> местом.
+              </p>
             </div>
           </div>
         </section>
@@ -135,24 +148,56 @@ export default function Home() {
           <h2>Game Зона в наших заведениях</h2>
           <p>и настольные игры</p>
           <div className={styles.gameImages}>
-            <Image src="/game_zone_1.png" alt="Game Zone" width={367} height={282} />
-            <Image src="/game_zone_2.png" alt="Game Zone" width={367} height={282} />
-            <Image src="/game_zone_3.png" alt="Game Zone" width={367} height={282} />
+            <Image
+              src="/game_zone_1.png"
+              alt="Game Zone"
+              width={367}
+              height={282}
+            />
+            <Image
+              src="/game_zone_2.png"
+              alt="Game Zone"
+              width={367}
+              height={282}
+            />
+            <Image
+              src="/game_zone_3.png"
+              alt="Game Zone"
+              width={367}
+              height={282}
+            />
           </div>
         </section>
 
         <ProductSlider />
 
-
         <section className={styles.partnerSection}>
           <h2>Starsdog</h2>
           <div className={styles.partnerContent}>
             <div className={styles.partnerInfo}>
-              <Image src="/starsdogLogo.png" alt="Starsdog" width={380} height={78} />
+              <Image
+                src="/starsdogLogo.png"
+                alt="Starsdog"
+                width={380}
+                height={78}
+              />
               <h3>О партнере</h3>
-              <p>Под брендом Starsdog BIM в январе открыл STARSDOGS в Москве (работает в Лубянском проезде). Компания также планирует развивать новый формат на фуд-кортах торговых центров и в стрит-ритейле. По словам Дяди, большинство точек позиционируются как островная концепция. Он привык работать с площадью около 20 кв. м, а в идеале — вообще с 2–3 кв. м, как это делается на международных рынках.</p>
+              <p>
+                Под брендом Starsdog BIM в январе открыл STARSDOGS в Москве
+                (работает в Лубянском проезде). Компания также планирует
+                развивать новый формат на фуд-кортах торговых центров и в
+                стрит-ритейле. По словам Дяди, большинство точек позиционируются
+                как островная концепция. Он привык работать с площадью около 20
+                кв. м, а в идеале — вообще с 2–3 кв. м, как это делается на
+                международных рынках.
+              </p>
             </div>
-            <Image src="/starsdog.png" alt="Starsdog" width={684} height={696} />
+            <Image
+              src="/starsdog.png"
+              alt="Starsdog"
+              width={684}
+              height={696}
+            />
           </div>
         </section>
 
@@ -167,12 +212,20 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className={styles.locationBox} style={{ backgroundImage: `url(/uzor.svg)` }}>
+            <div
+              className={styles.locationBox}
+              style={{ backgroundImage: `url(/uzor.svg)` }}
+            >
               <h3>Наши кафе магазины работают в Узбекистане</h3>
             </div>
           </div>
           <div className={styles.map}>
-            <Image src="/uzbekistanMap.png" alt="Map" width={1279} height={831} />
+            <Image
+              src="/uzbekistanMap.png"
+              alt="Map"
+              width={1279}
+              height={831}
+            />
           </div>
         </section>
 
@@ -224,20 +277,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.contacts} style={{backgroundImage:`url('/gradientWhite.png')`}}>
-        <div className={styles.container}>
-          <div className={styles.boxcontactscontainerrow}>
-            <div className={styles.boxemail}>
-              <h6>Наша почта</h6>
-              <h2>Support@bimproject.com</h2>
-            </div>
-            <div className={styles.boxemail}>
-              <h6>Мы по номеру..</h6>
-              <h2>+998 99 678 88 78</h2>
+        <section
+          className={styles.contacts}
+          style={{ backgroundImage: `url('/gradientWhite.png')` }}
+        >
+          <div className={styles.container}>
+            <div className={styles.boxcontactscontainerrow}>
+              <a href="mailto:support@bimproject.com"className={styles.boxemail}>
+                <h6>Наша почта</h6>
+                <h2>Support@bimproject.com</h2>
+              </a>
+              <a href="tel:+998996788878" className={styles.boxemail}>
+                <h6>Мы по номеру..</h6>
+                <h2>+998 99 678 88 78</h2>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
       <footer className={styles.footer}>
         <div className={styles.containerColumn}>
@@ -260,10 +316,20 @@ export default function Home() {
               <p>+998 99 678 88 78</p>
               <div className={styles.boxsocialnetworks}>
                 <a href="">
-                  <Image src="/telegram.svg" alt="Телеграм" width={33} height={33} />
+                  <Image
+                    src="/telegram.svg"
+                    alt="Телеграм"
+                    width={33}
+                    height={33}
+                  />
                 </a>
                 <a href="">
-                  <Image src="/insta.svg" alt="Инстаграм" width={33} height={33} />
+                  <Image
+                    src="/insta.svg"
+                    alt="Инстаграм"
+                    width={33}
+                    height={33}
+                  />
                 </a>
               </div>
             </div>
