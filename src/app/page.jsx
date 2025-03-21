@@ -216,8 +216,9 @@ export default function Home() {
             <div className={styles.featureBox}>
               <h3>Культовые продукты</h3>
               <p>
-                Эксклюзивные напитки <strong>Bubble BIM</strong>,{" "}
-                <strong>Shake BIM</strong>, <strong>Mojito BIM</strong>, топовые
+                Эксклюзивные напитки <strong>Tropic BIM</strong>,{" "}
+                <strong>Milky BIM</strong>, <strong>Bubble BIM</strong>,
+                <strong>Blossom BIM</strong>топовые
                 корейские снеки и возможность готовить рамен на месте сделали
                 BIM <strong>must-visit</strong> местом.
               </p>
