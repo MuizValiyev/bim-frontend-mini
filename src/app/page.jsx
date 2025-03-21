@@ -56,11 +56,11 @@ export default function Home() {
             </div>
           </div>
           <Image
+          className={styles.boxHeaderImage}
             src="/headerImage.png"
             alt="."
             width={705}
             height={585}
-            style={{ marginBottom: 110 }}
           />
         </section>
         <div className={styles.boxWrapper}>
@@ -69,12 +69,7 @@ export default function Home() {
             <div className={styles.cardOne} style={{ backgroundImage: `url(/uzor.svg)` }}>
               <div className={styles.cardContent}>
                 <div className={styles.boxCardTexts}>
-                  <Image
-                    src="/iconTick.svg"
-                    alt="."
-                    width={60}
-                    height={73}
-                  />
+                  <Image src="/iconTick.svg"alt="."width={60}height={73}/>
                   <div className={styles.boxText}>
                     <h3>Больше посетителей</h3>
                     <p>еда + напитки = идеальное сочетание.</p>
@@ -106,12 +101,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Image
-              src="/Image2.png"
-              alt="."
-              width={684}
-              height={696}
-            />
+            <Image className={styles.boxCardImage} src="/Image2.png"alt="."width={684}height={696}/>
           </div>
         </div>
 
@@ -234,45 +224,54 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.contactSection}>
-          <p className={styles.email}>Support@example.com</p>
-          <p className={styles.phone}>+998 97 111 99 75</p>
-        </section>
-      </div>
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <Image src="/logo.svg" alt="BIM Logo" width={120} height={50} />
-          <div className={styles.footerLinks}>
-            <div className={styles.footerColumn}>
-              <h4>О ВIM</h4>
-              <a href="#">Философия</a>
-              <a href="#">Команда</a>
-              <a href="#">Партнерам</a>
-              <a href="#">Контакты</a>
+        <section className={styles.contacts} style={{backgroundImage:`url('/gradientWhite.png')`}}>
+        <div className={styles.container}>
+          <div className={styles.boxcontactscontainerrow}>
+            <div className={styles.boxemail}>
+              <h6>Наша почта</h6>
+              <h2>Support@bimproject.com</h2>
             </div>
-            <div className={styles.footerColumn}>
-              <h4>Каталог</h4>
-              <a href="#">Франшиза</a>
-              <a href="#">Доставка</a>
-              <a href="#">Магазины</a>
+            <div className={styles.boxemail}>
+              <h6>Мы по номеру..</h6>
+              <h2>+998 99 678 88 78</h2>
             </div>
-            <div className={styles.footerColumn}>
-              <h4>Вакансии</h4>
-              <a href="#">Вакансии</a>
-            </div>
-            <div className={styles.footerColumn}>
-              <h4>Медиа</h4>
-              <a href="#">Блог</a>
-              <a href="#">Рецепты</a>
-            </div>
-          </div>
-          <div className={styles.socialLinks}>
-            <a href="#"><Image src="/instagram.svg" alt="Instagram" width={24} height={24} /></a>
-            <a href="#"><Image src="/telegram.svg" alt="Telegram" width={24} height={24} /></a>
           </div>
         </div>
-        <div className={styles.copyright}>
-          <p>© 2022–2023 ООО «ВИМ»</p>
+      </section>
+      </div>
+      <footer className={styles.footer}>
+        <div className={styles.containerColumn}>
+          <div className={styles.boxFooterLogo}>
+            <Image src="/logoWhite.svg" alt="Логотип" width={143} height={60} />
+          </div>
+          <div className={styles.boxcenterfooterinfo}>
+            <div className={styles.boxfooterinfocolumns}>
+              <p>Концепция BIM</p>
+              <p>Франшиза в цифрах</p>
+              <p>Поддержка</p>
+            </div>
+            <div className={styles.boxfooterinfocolumns}>
+              <p>Как стать партнером</p>
+              <p>Анкета</p>
+              <p>Политика конфиденциальности</p>
+            </div>
+            <div className={styles.boxfooterinfocolumns}>
+              <p>Контакты</p>
+              <p>+998 99 678 88 78</p>
+              <div className={styles.boxsocialnetworks}>
+                <a href="">
+                  <Image src="/telegram.svg" alt="Телеграм" width={33} height={33} />
+                </a>
+                <a href="">
+                  <Image src="/insta.svg" alt="Инстаграм" width={33} height={33} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.boxrowallrights}>
+            <p>© Bim Inc., 2024 Все права защищены.</p>
+            <p>Design & Dev by AbexLab</p>
+          </div>
         </div>
       </footer>
     </>

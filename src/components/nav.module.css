@@ -1,24 +1,27 @@
-.header {
+.header,
+.headerModalOpen {
   background-color: white;
   padding: 20px 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
-.headercontainer {
+.headerContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1440px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
-
 .logo img {
   height: 50px;
 }
 
-.mainnav ul {
+.mainNav ul {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -26,24 +29,35 @@
   padding: 0;
 }
 
-.mainnav a {
+.mainNav a {
   text-decoration: none;
   color: #333;
+  font-family: Rothek;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   transition: color 0.3s ease;
-  font-family: Rothek, sans-serif;
+}
+
+.burgerandbutton img {
+  display: none;
+}
+
+.burgerandbutton {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 
-.primarybutton {
+.primaryButton {
   background-color: #CC4422;
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 16px 24px;
+  font-weight: 600;
   font-size: 16px;
   font-style: normal;
   cursor: pointer;
@@ -51,9 +65,107 @@
   width: fit-content;
 }
 
-.navLinks {
+.boxModalAdaptive {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-bottom: 14px;
+  flex-direction: column;
   align-items: center;
+  gap: 14px;
+  border-radius: 0px 0px 20px 20px;
+  background: white;
+  z-index: 100;
+}
+
+.boxrowbtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.onebtn {
+  display: flex;
+  padding: 19px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #F8F8F8;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+
+@media screen and (max-width:1110px) {
+  .header,
+  .headerModalOpen {
+    padding: 20px 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainNav ul {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header .container {
+    background-color: white;
+    padding: 0px 9px 0px 24px;
+    border-radius: 20px;
+    height: 68px;
+  }
+
+  .header .logo img, .headerModalOpen .logo img {
+    width: 101px;
+    height: 42px;
+  }
+
+  .header,
+  .headerModalOpen {
+    background-color: unset;
+    box-shadow: unset;
+  }
+  .mainNav {
+    display: none;
+  }
+  .burgerandbutton img {
+    display: flex;
+    cursor: pointer;
+  }
+  .headerModalOpen .container {
+    background-color: white;
+    padding: 0px 9px 0px 24px;
+    border-radius: 20px 20px 0px 0px;
+    height: 68px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .burgerandbutton .button {
+    display: none;
+  }
 }
