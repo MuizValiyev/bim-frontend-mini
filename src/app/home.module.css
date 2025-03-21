@@ -17,7 +17,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
-    padding: 200px 30px 35px 24px;
+    padding: 160px 30px 35px 24px;
 }
 
 .boxHeaderText {
@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+    margin-top: 105px;
 }
 
 .boxTextPart1 a {
@@ -84,7 +85,7 @@
 
 .iconAndText {
     display: flex;
-    width: 213px;
+    width: 220px;
     padding: 15px;
     justify-content: center;
     align-items: center;
@@ -776,6 +777,12 @@
     height: 585px;
 }
 
+@media screen and (min-width:1441px) {
+    .header{
+        border-radius: 30px;
+    }
+}
+
 @media screen and (max-width:1400px) {
     .header {
         flex-direction: column;
@@ -793,6 +800,7 @@
 
     .boxTextPart1 {
         align-items: center;
+        margin-top: 0;
     }
 
     .iconAndText {
