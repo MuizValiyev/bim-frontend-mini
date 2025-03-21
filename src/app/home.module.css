@@ -311,19 +311,25 @@
 
 .sliderButton {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(96, 19, 29, 0.8);
-    border: none;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 12px;
+    background: #60131D;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    transition: background 0.3s;
+}
+
+.boxslidebarButtonsAndDots{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.boxslidebarButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
 
 .sliderButton:hover {
@@ -355,6 +361,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .productImage {
@@ -778,7 +785,7 @@
 }
 
 @media screen and (min-width:1441px) {
-    .header{
+    .header {
         border-radius: 30px;
     }
 }
@@ -936,12 +943,12 @@
         font-size: 16px;
     }
 
-    .boxCardImage{
+    .boxCardImage {
         height: 400px;
         width: 400px;
     }
-    
-    .cardOne{
+
+    .cardOne {
         width: 400px;
         height: 500px;
         padding: 30px;
@@ -987,6 +994,12 @@
     .boxfooterinfocolumns {
         align-items: center;
     }
+    .productSlide{
+        flex-direction: column;
+    }
+    .productInfo{
+        row-gap: 10px;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -1001,10 +1014,11 @@
     .boxemail h6 {
         font-size: 16px;
     }
-    .boxrowallrights{
+
+    .boxrowallrights {
         flex-direction: column;
         text-align: center;
-      }
+    }
 }
 
 @media screen and (max-width:460px) {
