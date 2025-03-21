@@ -125,8 +125,7 @@ export default function nav() {
       {isModalOpen && (
         <div
           className={styles.modalOverlay}
-          onClick={() => setIsModalOpen(false)}
-        >
+          onClick={() => setIsModalOpen(false)}>
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
             <h2>Связаться с BIM</h2>
             <form onSubmit={handleSubmit}>
