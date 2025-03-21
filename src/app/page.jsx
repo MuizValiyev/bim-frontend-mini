@@ -31,7 +31,7 @@ export default function Home() {
               <div className={styles.iconAndText}>
                 <Image src="/flowerIcon.svg" alt="." width={26} height={26} />
                 <h3>Окупаемость</h3>
-                <p>8-18 месяцев</p>
+                <p>8-12 месяцев</p>
               </div>
               <div className={styles.iconAndText}>
                 <Image src="/flowerIcon.svg" alt="." width={26} height={26} />
