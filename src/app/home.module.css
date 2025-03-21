@@ -304,7 +304,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 650px;
+    max-width: 1000px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -324,6 +324,7 @@
     flex-direction: row;
     width: 90%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .boxslidebarButtons{
@@ -372,9 +373,10 @@
 .productInfo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 20px 0;
     width: 100%;
+    row-gap: 10px;
 }
 
 .productInfo h3 {
@@ -996,9 +998,6 @@
     }
     .productSlide{
         flex-direction: column;
-    }
-    .productInfo{
-        row-gap: 10px;
     }
 }
 
