@@ -216,7 +216,6 @@
   .header .container {
     background-color: white;
     padding: 0px 9px 0px 24px;
-    border-radius: 20px;
     height: 68px;
   }
 
@@ -244,7 +243,6 @@
   .headerModalOpen .container {
     background-color: white;
     padding: 0px 9px 0px 24px;
-    border-radius: 20px 20px 0px 0px;
     height: 68px;
   }
 }

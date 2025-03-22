@@ -35,7 +35,7 @@
     margin-top: 105px;
 }
 
-.boxTextPart1 a {
+.boxTextPart1 button {
     display: flex;
     padding: 21px 16.86px 21px 16.84px;
     justify-content: center;
@@ -319,7 +319,7 @@
     cursor: pointer;
 }
 
-.boxslidebarButtonsAndDots{
+.boxslidebarButtonsAndDots {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -327,7 +327,7 @@
     align-items: center;
 }
 
-.boxslidebarButtons{
+.boxslidebarButtons {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -801,7 +801,7 @@
     z-index: 1000;
     animation: fadeIn 0.3s ease-in-out;
     pointer-events: auto;
-  }
+}
 
 
 .modal {
@@ -814,18 +814,18 @@
     border-radius: 30px;
     border: 1px solid var(--Primary-Primary100, #E2F5FF);
     background: #FFF;
-  }
-  
-  .modal h2 {
+}
+
+.modal h2 {
     color: #000;
     font-family: Rothek;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-  }
+}
 
-  .boxinputs {
+.boxinputs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -833,10 +833,10 @@
     gap: 16px;
     align-self: stretch;
     flex-wrap: wrap;
-  }
-  
-  .boxinputs input,
-  .boxinputs textarea {
+}
+
+.boxinputs input,
+.boxinputs textarea {
     width: 100%;
     border-radius: 10px;
     border: 1px solid var(--Colors-Neutral-200, #E3E3E3);
@@ -851,18 +851,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-  }
-  
-  .boxinputs textarea {
+}
+
+.boxinputs textarea {
     height: 150px;
-  }
-  
-  .boxinputs button {
+}
+
+.boxinputs button {
     width: 100%;
     padding: 19px 66px;
-  }
+}
 
-  .primaryButton {
+.primaryButton {
     background-color: #CC4422;
     color: white;
     border: none;
@@ -874,8 +874,36 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: fit-content;
-  }
-  
+}
+
+
+.submitResult {
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Успешное сообщение */
+.success {
+    background-color: #d4edda;
+    /* Светло-зелёный фон */
+    color: #155724;
+    /* Тёмно-зелёный текст */
+    border: 1px solid #c3e6cb;
+}
+
+/* Ошибочное сообщение */
+.error {
+    background-color: #f8d7da;
+    /* Светло-красный фон */
+    color: #721c24;
+    /* Тёмно-красный текст */
+    border: 1px solid #f5c6cb;
+}
 
 @media screen and (min-width:1441px) {
     .header {
@@ -1087,7 +1115,8 @@
     .boxfooterinfocolumns {
         align-items: center;
     }
-    .productSlide{
+
+    .productSlide {
         flex-direction: column;
     }
 }
@@ -1109,10 +1138,11 @@
         flex-direction: column;
         text-align: center;
     }
-    .modal{
+
+    .modal {
         max-width: 350px;
         width: 100%;
-      }
+    }
 }
 
 @media screen and (max-width:460px) {

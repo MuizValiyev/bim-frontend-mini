@@ -4,89 +4,10 @@ import Image from "next/image";
 import NavBar from "@/components/nav";
 import ProductSlider from "@/components/slider";
 import { useState, useEffect } from "react";
+import Modal from "@/components/modal";
 
 export default function Home() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [formData, setFormData] = useState({
-      name: '',
-      phone: '',
-      email: '',
-      city: '',
-      comment: ''
-    });
-    const [isLoading, setIsLoading] = useState(false);
-    const [submitResult, setSubmitResult] = useState(null);
-  
-    const openModalWithImage = () => {
-      setIsModalOpen(!isModalOpen);
-    };
-  
-    useEffect(() => {
-      document.body.style.overflow = isModalOpen ? "hidden" : "auto";
-    }, [isModalOpen]);
-  
-    const openModal = () => {
-      setIsModalOpenAdaptive(!isModalOpenAdaptive);
-    };
-  
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-    };
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setIsLoading(true);
-      
-      try {
-        const response = await fetch('https://crm.bimretail.uz/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-        
-        if (response.ok) {
-          setSubmitResult({
-            success: true,
-            message: 'Сообщение успешно отправлено!'
-          });
-          
-          // Очистить форму при успешной отправке
-          setFormData({
-            name: '',
-            phone: '',
-            email: '',
-            country: '',
-            city: '',
-            comment: ''
-          });
-          
-          // Закрыть модальное окно через 2 секунды после успешной отправки
-          setTimeout(() => {
-            setIsModalOpen(false);
-            setSubmitResult(null);
-          }, 2000);
-        } else {
-          setSubmitResult({
-            success: false,
-            message: 'Произошла ошибка при отправке.'
-          });
-        }
-      } catch (error) {
-        console.error('Ошибка при отправке данных:', error);
-        setSubmitResult({
-          success: false,
-          message: 'Произошла ошибка при отправке данных.'
-        });
-      } finally {
-        setIsLoading(false);
-      }
-    };
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <NavBar />
@@ -107,7 +28,9 @@ export default function Home() {
                   отдыха, общения и ярких впечатлений.
                 </p>
               </div>
-              <a href="#" onClick={openModalWithImage}>Стать ПАРТНЕРОМ</a>
+              <button onClick={() => setIsModalOpen(true)}>
+                Стать ПАРТНЕРОМ
+              </button>
             </div>
             <div className={styles.boxTextPart2}>
               <div className={styles.iconAndText}>
@@ -219,9 +142,9 @@ export default function Home() {
               <p>
                 Эксклюзивные напитки <strong>Tropic BIM</strong>,{" "}
                 <strong>Milky BIM</strong>, <strong>Bubble BIM</strong>,
-                <strong>Blossom BIM</strong>топовые
-                корейские снеки и возможность готовить рамен на месте сделали
-                BIM <strong>must-visit</strong> местом.
+                <strong>Blossom BIM</strong>топовые корейские снеки и
+                возможность готовить рамен на месте сделали BIM{" "}
+                <strong>must-visit</strong> местом.
               </p>
             </div>
           </div>
@@ -266,9 +189,10 @@ export default function Home() {
               />
               <h3>О партнере</h3>
               <p>
-                При открытии филиала BIM в вашем городе, STARDOGS станет неотъемлемой частью вашей локации.  
-                Дополнительный поток клиентов: STARDOGS - известный бренд, любимый миллионами. 
-                Это привлечёт ещё больше гостей в ваш магазин.
+                При открытии филиала BIM в вашем городе, STARDOGS станет
+                неотъемлемой частью вашей локации. Дополнительный поток
+                клиентов: STARDOGS - известный бренд, любимый миллионами. Это
+                привлечёт ещё больше гостей в ваш магазин.
               </p>
             </div>
             <Image
@@ -410,80 +334,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      {isModalOpen && (
-        <div
-          className={styles.modalOverlay}
-          onClick={() => setIsModalOpen(false)}
-        >
-          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-            <h2>Связаться с BIM</h2>
-            <form onSubmit={handleSubmit}>
-              <div className={styles.boxinputs}>
-                <input 
-                  type="text" 
-                  name="name" 
-                  placeholder="Ф.И.О" 
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <input 
-                  type="tel" 
-                  name="phone" 
-                  placeholder="Номер" 
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                />
-                <input 
-                  type="email" 
-                  name="email" 
-                  placeholder="Почта" 
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <input 
-                  type="text" 
-                  name="country" 
-                  placeholder="Страна" 
-                  value={formData.country}
-                  onChange={handleChange}
-                  required
-                />
-                <input 
-                  type="text" 
-                  name="city" 
-                  placeholder="Город" 
-                  value={formData.city}
-                  onChange={handleChange}
-                  required
-                />
-                <textarea
-                  name="comment"
-                  placeholder="Напишите формат франшизы"
-                  value={formData.comment}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-                <button 
-                  className={`${styles.button} ${styles.primaryButton}`} 
-                  type="submit"
-                  disabled={isLoading}
-                >
-                  {isLoading ? 'Отправка...' : 'Отправить'}
-                </button>
-                
-                {submitResult && (
-                  <div className={styles.submitResult + (submitResult.success ? ' ' + styles.success : ' ' + styles.error)}>
-                    {submitResult.message}
-                  </div>
-                )}
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
