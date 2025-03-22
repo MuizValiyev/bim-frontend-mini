@@ -40,7 +40,7 @@
   transition: color 0.3s ease;
 }
 
-.burgerandbutton img {
+.burgerimg {
   display: none;
 }
 
@@ -48,6 +48,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 }
 
 
@@ -235,9 +236,13 @@
     display: none;
   }
 
-  .burgerandbutton img {
+  .burgerimg {
     display: flex;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
   }
 
   .headerModalOpen .container {

@@ -151,8 +151,7 @@ export default function Home() {
         </section>
 
         <section className={styles.gameZoneSection}>
-          <h2>Game Зона в наших заведениях</h2>
-          <p>и настольные игры</p>
+          <h2>Game Зона в наших заведениях и настольные игры</h2>
           <div className={styles.gameImages}>
             <Image
               src="/game_zone_1.png"

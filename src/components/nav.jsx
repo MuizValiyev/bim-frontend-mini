@@ -50,11 +50,12 @@ export default function nav() {
           </ul>
         </nav>
         <div className={styles.burgerandbutton}>
-          <img onClick={openModal} src="/burger.svg" alt="Бургер" />
+          <motion.div animate={isModalOpenAdaptive ? {rotate:180} : {rotate:0}} transition={{transition:"easy"}} className={styles.burgerimg}>
+            <img onClick={openModal} src={isModalOpenAdaptive ? "/closeburger.svg" : "/burger.svg"} alt="Бургер" />
+          </motion.div>
           <button
             className={`${styles.button} ${styles.primaryButton}`}
-            onClick={() => setIsModalOpen(true)}
-          >
+            onClick={() => setIsModalOpen(true)}>
             Связаться с нами
           </button>
         </div>
