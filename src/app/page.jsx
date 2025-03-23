@@ -5,12 +5,14 @@ import NavBar from "@/components/nav";
 import ProductSlider from "@/components/slider";
 import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
+import YandexMetrika from "@/components/YandexMetrika"; 
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <NavBar />
+      <YandexMetrika /> 
       <div className={styles.mainContainer}>
         <section
           className={styles.header}
@@ -282,7 +284,7 @@ export default function Home() {
               </a>
               <a href="tel:+998996788878" className={styles.boxemail}>
                 <h6>Мы по номеру..</h6>
-                <h2>+998 99-446-44-00</h2>
+                <h2>+998 91 099-00-09 </h2>
               </a>
             </div>
           </div>
@@ -306,7 +308,7 @@ export default function Home() {
             </div>
             <div className={styles.boxfooterinfocolumns}>
               <p>Контакты</p>
-              <p>+998 99-446-44-00</p>
+              <p>+998 91 099-00-09 </p>
               <div className={styles.boxsocialnetworks}>
                 <a href="https://www.tiktok.com/@bim.tashkent?_t=ZS-8usC2eeS9Vx&_r=1">
                   <Image
