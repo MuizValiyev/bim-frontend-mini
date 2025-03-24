@@ -33,16 +33,16 @@ export default function nav() {
         <nav className={styles.mainNav}>
           <ul>
             <li>
-              <a href="#about">Концепция</a>
+              <a href="#concept">Концепция</a>
             </li>
             <li>
-              <a href="#concept">Цифры</a>
+              <a href="#numbers">Цифры</a>
             </li>
             <li>
-              <a href="#franchisee">Поддержка</a>
+              <a href="#contacts">Поддержка</a>
             </li>
             <li>
-              <a href="#bim-not-only">Как стать партнером</a>
+              <a href="#partners">Как стать партнером</a>
             </li>
             <li>
               <a href="#contacts">Контакты</a>

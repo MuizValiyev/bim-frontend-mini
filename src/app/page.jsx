@@ -15,6 +15,7 @@ export default function Home() {
       <YandexMetrika /> 
       <div className={styles.mainContainer}>
         <section
+          id="partners"
           className={styles.header}
           style={{ backgroundImage: `url(/uzor.svg)` }}
         >
@@ -60,7 +61,7 @@ export default function Home() {
             height={585}
           />
         </section>
-        <div className={styles.boxWrapper}>
+        <div id="concept" className={styles.boxWrapper}>
           <h1>Почему это выгодно?</h1>
           <div className={styles.boxTwoCards}>
             <div
@@ -233,7 +234,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.financialSection}>
+        <section id="numbers" className={styles.financialSection}>
           <h2>Финансовые условия</h2>
           <div className={styles.financialGrid}>
             <div className={styles.financialItem}>
@@ -273,6 +274,7 @@ export default function Home() {
         </section>
 
         <section
+          id="contacts"
           className={styles.contacts}
           style={{ backgroundImage: `url('/gradientWhite.png')` }}
         >
@@ -297,14 +299,12 @@ export default function Home() {
           </div>
           <div className={styles.boxcenterfooterinfo}>
             <div className={styles.boxfooterinfocolumns}>
-              <p>Концепция BIM</p>
-              <p>Франшиза в цифрах</p>
-              <p>Поддержка</p>
+              <a href="#concept">Концепция BIM</a>
+              <a href="#numbers">Цифры</a>
             </div>
             <div className={styles.boxfooterinfocolumns}>
-              <p>Как стать партнером</p>
-              <p>Анкета</p>
-              <p>Политика конфиденциальности</p>
+              <a href="#partners">Как стать партнером</a>
+              <button onClick={() => setIsModalOpen(true)}>Связаться с нами</button>
             </div>
             <div className={styles.boxfooterinfocolumns}>
               <p>Контакты</p>
