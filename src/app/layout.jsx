@@ -12,11 +12,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "BIM в Узбекистане – Цифровое моделирование зданий и инфраструктуры",
-  description: "BIM технологии в Узбекистане – современные решения для проектирования, строительства и эксплуатации зданий. Узнайте о преимуществах Building Information Modeling (BIM) и его внедрении в строительную отрасль Узбекистана.",
-  keywords: "BIM Узбекистан, Building Information Modeling, цифровое строительство, проектирование зданий, архитектура, Revit, ArchiCAD, информационное моделирование, строительство Узбекистан",
+  title: "BIM – Станьте партнёром сети Street Кафе BIM",
+  description:
+    "Станьте партнёром сети Street Кафе BIM и откройте собственное кафе всего за 1–2 месяца! Готовая модель, поддержка на каждом этапе и минимальные сроки запуска.",
+  openGraph: {
+    title: "BIM – Станьте партнёром сети Street Кафе BIM",
+    description:
+      "Станьте партнёром сети Street Кафе BIM и откройте собственное кафе всего за 1–2 месяца! Готовая модель, поддержка на каждом этапе и минимальные сроки запуска.",
+    url: "https://bimratail.uz", // укажите реальный URL
+    type: "website",
+    images: [
+      {
+        url: "/icondescription.png", // путь к изображению (лучше использовать абсолютный URL)
+        width: 1200,
+        height: 1200,
+        alt: "BIM Street Кафе",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BIM – Станьте партнёром сети Street Кафе BIM",
+    description:
+      "Станьте партнёром сети Street Кафе BIM и откройте собственное кафе всего за 1–2 месяца! Готовая модель, поддержка на каждом этапе и минимальные сроки запуска.",
+    images: ["/icondescription.png"], // путь к изображению
+  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -31,4 +52,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
