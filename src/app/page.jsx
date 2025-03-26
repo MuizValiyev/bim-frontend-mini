@@ -1,6 +1,7 @@
 "use client";
 import styles from "./home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import NavBar from "@/components/nav";
 import ProductSlider from "@/components/slider";
 import { useState, useEffect } from "react";
@@ -17,8 +18,7 @@ export default function Home() {
         <section
           id="partners"
           className={styles.header}
-          style={{ backgroundImage: `url(/uzor.svg)` }}
-        >
+          style={{ backgroundImage: `url(/uzor.svg)` }}>
           <div className={styles.boxHeaderText}>
             <div className={styles.boxTextPart1}>
               <div className={styles.boxText}>
@@ -294,9 +294,9 @@ export default function Home() {
       </div>
       <footer className={styles.footer}>
         <div className={styles.containerColumn}>
-          <div className={styles.boxFooterLogo}>
+          <Link href="/" className={styles.boxFooterLogo}>
             <Image src="/logoWhite.svg" alt="Логотип" width={143} height={60} />
-          </div>
+          </Link>
           <div className={styles.boxcenterfooterinfo}>
             <div className={styles.boxfooterinfocolumns}>
               <a href="#concept">Концепция BIM</a>

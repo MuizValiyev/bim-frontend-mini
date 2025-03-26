@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function nav() {
   const [isModalOpenAdaptive, setIsModalOpenAdaptive] = useState(false);
@@ -27,9 +28,9 @@ export default function nav() {
         transition={{ duration: 0.2 }}
         className={`${styles.headerContainer} ${styles.container}`}
       >
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <img src="/logo.svg" alt="BIM" />
-        </div>
+        </Link>
         <nav className={styles.mainNav}>
           <ul>
             <li>
