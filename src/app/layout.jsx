@@ -12,8 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "BIM",
-  description: "BIM WEBSITE",
+  title: "BIM в Узбекистане – Цифровое моделирование зданий и инфраструктуры",
+  description: "BIM технологии в Узбекистане – современные решения для проектирования, строительства и эксплуатации зданий. Узнайте о преимуществах Building Information Modeling (BIM) и его внедрении в строительную отрасль Узбекистана.",
+  keywords: "BIM Узбекистан, Building Information Modeling, цифровое строительство, проектирование зданий, архитектура, Revit, ArchiCAD, информационное моделирование, строительство Узбекистан",
 };
 
 export default function RootLayout({ children }) {
