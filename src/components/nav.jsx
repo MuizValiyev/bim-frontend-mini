@@ -74,11 +74,10 @@ export default function nav() {
             hidden: { opacity: 0 },
             visible: {opacity: 1,transition: { staggerChildren: 0.09 }}}}>
           {[
-            { text: "О нас", href: "#about" },
-            { text: "Франшиза", href: "#franchisee" },
-            { text: "География", href: "#concept" },
-            { text: "Условия", href: "#bim-not-only" },
-            { text: "Этапы", href: "#contacts" },
+            { text: "Концепция", href: "#concept" },
+            { text: "Цифры", href: "#numbers" },
+            { text: "Поддержка", href: "#contacts" },
+            { text: "Как стать партнером", href: "#partners" },
             { text: "Контакты", href: "#contacts" },
           ].map((item, index) => (
             <motion.a
