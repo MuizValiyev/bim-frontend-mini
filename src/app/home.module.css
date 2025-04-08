@@ -818,6 +818,7 @@
     border-radius: 30px;
     border: 1px solid var(--Primary-Primary100, #E2F5FF);
     background: #FFF;
+    height: 728px;
 }
 
 .modal h2 {
@@ -1162,3 +1163,11 @@
         gap: 20px;
     }
 }
+
+@media screen and (max-height: 750px) {
+    .modal {
+      max-height: 90vh; /* ограничим высоту модалки */
+      overflow-y: auto;  /* чтобы можно было прокручивать */
+      scrollbar-width: none; /* скрыть скроллбар */
+    }
+  }
