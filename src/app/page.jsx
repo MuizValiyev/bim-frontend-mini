@@ -290,7 +290,7 @@ export default function Home() {
               </a>
               <a href="tel:+998996788878" className={styles.boxemail}>
                 <h6>Наши контакты</h6>
-                <h2 style={{ fontSize: '20px' }}>WhatsApp: +998 91 099-00-09</h2>
+                <h2 style={{ fontSize: '20px' }}>WhatsApp: +7 910 492-68-29</h2>
                 <h2 style={{ fontSize: '20px' }}>
                   Telegram: <a href="https://t.me/EkatIv1309">@EkatIv1309</a>
                 </h2>
