@@ -665,7 +665,7 @@
     background-color: #FFFFFF;
     background-size: cover;
     background-position: center;
-    padding: 53px 142px;
+    padding: 53px ;
 }
 
 .container {
@@ -687,12 +687,12 @@
 
 .boxemail {
     display: flex;
-    width: 448px;
+    width: 400px;
+    height: 200px;
     padding: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     border-radius: 30px;
     background: #FFF;
 }

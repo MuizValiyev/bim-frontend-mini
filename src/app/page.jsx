@@ -6,14 +6,14 @@ import NavBar from "@/components/nav";
 import ProductSlider from "@/components/slider";
 import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
-import YandexMetrika from "@/components/YandexMetrika"; 
+import YandexMetrika from "@/components/YandexMetrika";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <NavBar />
-      <YandexMetrika /> 
+      <YandexMetrika />
       <div className={styles.mainContainer}>
         <section
           id="partners"
@@ -284,9 +284,16 @@ export default function Home() {
                 <h6>Наша почта</h6>
                 <h2>tmalikov1@icloud.com</h2>
               </a>
-              <a href="tel:+998996788878" className={styles.boxemail}>
+              <a href="tel:+998910990009" className={styles.boxemail}>
                 <h6>Мы по номеру..</h6>
                 <h2>+998 91 099-00-09 </h2>
+              </a>
+              <a href="tel:+998996788878" className={styles.boxemail}>
+                <h6>Наши контакты</h6>
+                <h2 style={{ fontSize: '20px' }}>WhatsApp: +998 91 099-00-09</h2>
+                <h2 style={{ fontSize: '20px' }}>
+                  Telegram: <a href="https://t.me/EkatIv1309">@EkatIv1309</a>
+                </h2>
               </a>
             </div>
           </div>
@@ -327,11 +334,6 @@ export default function Home() {
                   />
                 </a>
               </div>
-            </div>
-            <div className={styles.boxfooterinfocolumns}>
-              <p>Вы можете связаться с нами здесь </p>
-              <p>Whats App: +7 910 492-68-29</p>
-              <p>Telegram: @EkatIv1309</p>
             </div>
           </div>
           <div className={styles.boxrowallrights}>
