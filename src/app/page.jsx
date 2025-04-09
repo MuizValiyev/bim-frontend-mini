@@ -314,19 +314,24 @@ export default function Home() {
                   <Image
                     src="/tik-tok.svg"
                     alt="тикток"
-                    width={33}
-                    height={33}
+                    width={24}
+                    height={24}
                   />
                 </a>
                 <a href="https://www.instagram.com/bim.tashkent?igsh=azZtNjB1ajBsdnh3">
                   <Image
                     src="/insta.svg"
                     alt="Инстаграм"
-                    width={33}
-                    height={33}
+                    width={24}
+                    height={24}
                   />
                 </a>
               </div>
+            </div>
+            <div className={styles.boxfooterinfocolumns}>
+              <p>Вы можете связаться с нами здесь </p>
+              <p>Whats App: +7 910 492-68-29</p>
+              <p>Telegram: @EkatIv1309</p>
             </div>
           </div>
           <div className={styles.boxrowallrights}>
