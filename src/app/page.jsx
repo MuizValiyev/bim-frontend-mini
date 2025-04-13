@@ -6,12 +6,9 @@ import NavBar from "@/components/nav";
 import ProductSlider from "@/components/slider";
 import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
-<<<<<<< HEAD
 import YandexMetrika from "@/components/YandexMetrika";
-=======
 import { useLanguage } from "@/context/languageContext";
 import YandexMetrika from "@/components/YandexMetrika"; 
->>>>>>> 4aefbd5 (fix)
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -278,13 +275,10 @@ export default function Home() {
                 <h6>{translate("Наша почта")}</h6>
                 <h2>tmalikov1@icloud.com</h2>
               </a>
-<<<<<<< HEAD
               <a href="tel:+998910990009" className={styles.boxemail}>
-                <h6>Мы по номеру..</h6>
-=======
+                <h6>{translate("Мы по номеру..")}</h6>
               <a href="tel:+998996788878" className={styles.boxemail}>
                 <h6>{translate("Мы по номеру.")}.</h6>
->>>>>>> 4aefbd5 (fix)
                 <h2>+998 91 099-00-09 </h2>
               </a>
               <a href="tel:+998996788878" className={styles.boxemail}>
