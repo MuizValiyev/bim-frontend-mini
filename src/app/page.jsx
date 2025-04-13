@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
 import YandexMetrika from "@/components/YandexMetrika";
 import { useLanguage } from "@/context/languageContext";
-import YandexMetrika from "@/components/YandexMetrika"; 
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,16 +20,13 @@ export default function Home() {
         <section
           id="partners"
           className={styles.header}
-          style={{ backgroundImage: `url(/uzor.svg)` }}>
+          style={{ backgroundImage: `url(/uzor.svg)` }}
+        >
           <div className={styles.boxHeaderText}>
             <div className={styles.boxTextPart1}>
               <div className={styles.boxText}>
-                <h2>
-                  {translate("atmosphere")}
-                </h2>
-                <p>
-                  {translate("impressions")}
-                </p>
+                <h2>{translate("atmosphere")}</h2>
+                <p>{translate("impressions")}</p>
               </div>
               <button onClick={() => setIsModalOpen(true)}>
                 {translate("Стать ПАРТНЕРОМ")}
@@ -67,7 +63,8 @@ export default function Home() {
           <div className={styles.boxTwoCards}>
             <div
               className={styles.cardOne}
-              style={{ backgroundImage: `url(/uzor.svg)` }}>
+              style={{ backgroundImage: `url(/uzor.svg)` }}
+            >
               <div className={styles.cardContent}>
                 <div className={styles.boxCardTexts}>
                   <Image src="/iconTick.svg" alt="." width={60} height={73} />
@@ -81,7 +78,9 @@ export default function Home() {
                   <div className={styles.boxText}>
                     <h3>{translate("Больше прибыли")}</h3>
                     <p>
-                      {translate("Средний чек увеличивается за счёт разнообразного ассортимента.")}
+                      {translate(
+                        "Средний чек увеличивается за счёт разнообразного ассортимента."
+                      )}
                     </p>
                   </div>
                 </div>
@@ -90,7 +89,9 @@ export default function Home() {
                   <div className={styles.boxText}>
                     <h3>{translate("Готовое решение")}</h3>
                     <p>
-                      {translate("Никаких сложностей, мы уже настроили процесс интеграции.")}
+                      {translate(
+                        "Никаких сложностей, мы уже настроили процесс интеграции."
+                      )}
                     </p>
                   </div>
                 </div>
@@ -108,14 +109,17 @@ export default function Home() {
 
         <section className={styles.conceptSection}>
           <h2>
-            {translate("BIM — это не просто магазин, а")} <span className={styles.highlight}> lifestyle</span>
+            {translate("BIM — это не просто магазин, а")}{" "}
+            <span className={styles.highlight}> lifestyle</span>
           </h2>
 
           <div className={styles.featuresContainer}>
             <div className={styles.featureBox}>
               <h3>{translate("Атмосфера и вайб")}</h3>
               <p>
-                {translate("Каждая точка BIM – это стильное пространство, куда молодежь приходит не только за покупками, но и за эмоциями.")}
+                {translate(
+                  "Каждая точка BIM – это стильное пространство, куда молодежь приходит не только за покупками, но и за эмоциями."
+                )}
               </p>
             </div>
 
@@ -123,15 +127,20 @@ export default function Home() {
               <h3>{translate("Социальный феномен")}</h3>
               <p>
                 {translate("BIM стал культовым местом среди")}{" "}
-                <strong>{translate("поколения Z и миллениалов,")}</strong>{" "}{translate("где рождаются тренды и создаётся контент.")}
+                <strong>{translate("поколения Z и миллениалов,")}</strong>{" "}
+                {translate("где рождаются тренды и создаётся контент.")}
               </p>
             </div>
 
             <div className={styles.featureBox}>
               <h3>{translate("Взрывной рост")}</h3>
               <p>
-                {translate("За короткий срок открыто 8 филиалов, но это только начало. До конца года сеть BIM вырастет")}
-                <strong>{translate("до 50 точек по всему Узбекистану.")}</strong>
+                {translate(
+                  "За короткий срок открыто 8 филиалов, но это только начало. До конца года сеть BIM вырастет"
+                )}
+                <strong>
+                  {translate("до 50 точек по всему Узбекистану.")}
+                </strong>
               </p>
             </div>
 
@@ -140,7 +149,10 @@ export default function Home() {
               <p>
                 {translate("Эксклюзивные напитки")} <strong>Tropic BIM</strong>,{" "}
                 <strong>Milky BIM</strong>, <strong>Bubble BIM</strong>,
-                <strong>Blossom BIM</strong>{" "}{translate("топовые корейские снеки и возможность готовить рамен на месте сделали BIM")}{" "}
+                <strong>Blossom BIM</strong>{" "}
+                {translate(
+                  "топовые корейские снеки и возможность готовить рамен на месте сделали BIM"
+                )}{" "}
                 <strong>must-visit</strong> {translate("местом.")}
               </p>
             </div>
@@ -184,9 +196,7 @@ export default function Home() {
                 height={78}
               />
               <h3>{translate("О партнере")}</h3>
-              <p>
-                {translate("STARDOGS")}
-              </p>
+              <p>{translate("STARDOGS")}</p>
             </div>
             <Image
               src="/starsdog.png"
@@ -204,7 +214,8 @@ export default function Home() {
               <p>{translate("Так выглядит география сети сейчас")}</p>
               <div className={styles.buttonWrapper}>
                 <a href="#" className={styles.locationButton}>
-                  {translate("Проверить свой город")} <img src="/arrow_right_up.svg" alt="#" />
+                  {translate("Проверить свой город")}{" "}
+                  <img src="/arrow_right_up.svg" alt="#" />
                 </a>
               </div>
             </div>
@@ -275,19 +286,17 @@ export default function Home() {
                 <h6>{translate("Наша почта")}</h6>
                 <h2>tmalikov1@icloud.com</h2>
               </a>
-              <a href="tel:+998910990009" className={styles.boxemail}>
-                <h6>{translate("Мы по номеру..")}</h6>
               <a href="tel:+998996788878" className={styles.boxemail}>
-                <h6>{translate("Мы по номеру.")}.</h6>
+                <h6>{translate("Мы по номеру..")}.</h6>
                 <h2>+998 91 099-00-09 </h2>
               </a>
-              <a href="tel:+998996788878" className={styles.boxemail}>
-                <h6>Наши контакты</h6>
-                <h2 style={{ fontSize: '20px' }}>WhatsApp: +7 910 492-68-29</h2>
-                <h2 style={{ fontSize: '20px' }}>
+              <div className={styles.boxemail}>
+                <h6>{translate("Наши контакты")}</h6>
+                <h2 style={{ fontSize: "20px" }}>WhatsApp: <a href="tel:+79104926829">+7 910 492-68-29</a></h2>
+                <h2 style={{ fontSize: "20px" }}>
                   Telegram: <a href="https://t.me/EkatIv1309">@EkatIv1309</a>
                 </h2>
-              </a>
+              </div>
             </div>
           </div>
         </section>
@@ -304,7 +313,9 @@ export default function Home() {
             </div>
             <div className={styles.boxfooterinfocolumns}>
               <a href="#partners">{translate("Как стать партнером")}</a>
-              <button onClick={() => setIsModalOpen(true)}>{translate("Связаться с нами")}</button>
+              <button onClick={() => setIsModalOpen(true)}>
+                {translate("Связаться с нами")}
+              </button>
             </div>
             <div className={styles.boxfooterinfocolumns}>
               <p>{translate("Контакты")}</p>
