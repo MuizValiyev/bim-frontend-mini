@@ -1166,8 +1166,8 @@
 
 @media screen and (max-height: 750px) {
     .modal {
-      max-height: 90vh; /* ограничим высоту модалки */
-      overflow-y: auto;  /* чтобы можно было прокручивать */
-      scrollbar-width: none; /* скрыть скроллбар */
+        max-height: 90vh;
+        overflow-y: auto;
+        scrollbar-width: none;
     }
-  }
+}

@@ -4,10 +4,13 @@ import { useState, useEffect } from "react";
 import Modal from "@/components/modal";
 import { motion } from "motion/react";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/language";
+import { useLanguage } from "@/context/languageContext";
 
 export default function nav() {
   const [isModalOpenAdaptive, setIsModalOpenAdaptive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { translate } = useLanguage();
 
   const openModal = () => {
     setIsModalOpenAdaptive(!isModalOpenAdaptive);
@@ -34,19 +37,19 @@ export default function nav() {
         <nav className={styles.mainNav}>
           <ul>
             <li>
-              <a href="#concept">Концепция</a>
+              <a href="#concept">{translate("concept")}</a>
             </li>
             <li>
-              <a href="#numbers">Цифры</a>
+              <a href="#numbers">{translate("numbers")}</a>
             </li>
             <li>
-              <a href="#contacts">Поддержка</a>
+              <a href="#contacts">{translate("support")}</a>
             </li>
             <li>
-              <a href="#partners">Как стать партнером</a>
+              <a href="#partners">{translate("partners")}</a>
             </li>
             <li>
-              <a href="#contacts">Контакты</a>
+              <a href="#contacts">{translate("contacts")}</a>
             </li>
           </ul>
         </nav>
@@ -54,10 +57,11 @@ export default function nav() {
           <motion.div animate={isModalOpenAdaptive ? {rotate:180} : {rotate:0}} transition={{transition:"easy"}} className={styles.burgerimg}>
             <img onClick={openModal} src={isModalOpenAdaptive ? "/closeburger.svg" : "/burger.svg"} alt="Бургер" />
           </motion.div>
+          <LanguageSwitcher/>
           <button
             className={`${styles.button} ${styles.primaryButton}`}
             onClick={() => setIsModalOpen(true)}>
-            Связаться с нами
+            {translate("request")}
           </button>
         </div>
       </motion.div>
@@ -74,11 +78,11 @@ export default function nav() {
             hidden: { opacity: 0 },
             visible: {opacity: 1,transition: { staggerChildren: 0.09 }}}}>
           {[
-            { text: "Концепция", href: "#concept" },
-            { text: "Цифры", href: "#numbers" },
-            { text: "Поддержка", href: "#contacts" },
-            { text: "Как стать партнером", href: "#partners" },
-            { text: "Контакты", href: "#contacts" },
+            { text: translate("concept"), href: "#concept" },
+            { text: translate("numbers"), href: "#numbers" },
+            { text: translate("support"), href: "#contacts" },
+            { text: translate("partners"), href: "#partners" },
+            { text: translate("contacts"), href: "#contacts" },
           ].map((item, index) => (
             <motion.a
               key={index}
@@ -93,7 +97,7 @@ export default function nav() {
             className={`${styles.button} ${styles.primaryButton}`}
             onClick={() => setIsModalOpen(true)}
             variants={{hidden: { opacity: 0, y: 10 },visible: { opacity: 1, y: 0 },}}>
-            Связаться с нами
+            {translate("request")}
           </motion.button>
         </motion.div>
       </motion.div>

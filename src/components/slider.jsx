@@ -1,30 +1,32 @@
 "use client";
 import { useState } from "react";
 import styles from "../app/home.module.css";
+import { useLanguage } from "@/context/languageContext";
 import Image from "next/image";
 
 const ProductSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const { translate } = useLanguage();
+  
   const products = [    
     {
       id: 1,
       image: "/bubble_tea.png",
-      title: "Bubble Tea и напитки",
-      description: "В BIM Street Cafe вас ждут освежающие напитки — идеально подходят для жаркой погоды! 🌞🍹",
+      title: translate("Bubble Tea и напитки"),
+      description: translate("В BIM Street Cafe вас ждут освежающие напитки — идеально подходят для жаркой погоды! 🌞🍹"),
     },
     {
       id: 2,
       image: "/product_1.png",
-      title: "Кук си",
-      description: "Кук си — это холодный корейский суп с лапшой и овощами. Освежает и утоляет жажду в жаркую погоду! 😎",
+      title: translate("Кук си"),
+      description: translate("Кук си — это холодный корейский суп с лапшой и овощами. Освежает и утоляет жажду в жаркую погоду! 😎"),
     },
 
     {
       id: 3,
       image: "/ramen.png",
-      title: "Рамен",
-      description: "У BIM большой ассортимент вкусных и необычных раменов, которые обязательно стоит попробовать! 🍜",
+      title: translate("Рамен"),
+      description: translate("У BIM большой ассортимент вкусных и необычных раменов, которые обязательно стоит попробовать! 🍜"),
     },
   ];
 
@@ -42,7 +44,7 @@ const ProductSlider = () => {
 
   return (
     <section className={styles.productsSection}>
-      <h2>Наши продукты</h2>
+      <h2>{translate("Наши продукты")}</h2>
       <div className={styles.productSlider}>
         <div className={styles.productSlideWrapper}>
           <div
